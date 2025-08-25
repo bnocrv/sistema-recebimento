@@ -190,7 +190,7 @@ recebimentoForm.addEventListener("submit", async (e) => {
     const respostaPlanilha = await fetch(webAppURL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/plain;charset=utf-8",
       },
       body: JSON.stringify({
         codigo,
@@ -204,7 +204,7 @@ recebimentoForm.addEventListener("submit", async (e) => {
     });
 
     const respostaTexto = await respostaPlanilha.text();
-    console.log("Resposta do Apps Script:", respostaTexto); // 👈 debug
+    console.log("Resposta do Apps Script:", respostaTexto);
 
     if (respostaTexto.includes("OK")) {
       recebimentoMsg.style.color = "green";
