@@ -1,0 +1,15 @@
+{
+  "name": "recebimentoapp",
+  "version": "1.0.0",
+  "description": "Sistema de controle de recebimentos por loja",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["firebase", "logistica", "html", "css", "javascript"],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
