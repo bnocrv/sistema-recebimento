@@ -158,12 +158,13 @@ recebimentoForm.addEventListener("submit", async (e) => {
           const base64Image = reader.result.split(",")[1];
 
           try {
+            const formData = new FormData();
+            formData.append("key", "aa3ef7357e89fe7032ebeb4185be9229");
+            formData.append("image", base64Image); // continua sendo base64
+
             const response = await fetch("https://api.imgbb.com/1/upload", {
               method: "POST",
-              body: new URLSearchParams({
-                key: "aa3ef7357e89fe7032ebeb4185be9229",
-                image: base64Image,
-              }),
+              body: formData,
             });
 
             const result = await response.json();
