@@ -6,13 +6,19 @@
 
     <title>RecebimentoApp</title>
 
-    <!-- 🔗 Link para o arquivo de estilos (CSS) -->
+    <!-- Link para fonte Roboto do Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link para seu CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- 🧾 Título principal do sistema -->
-    <h1>RecebimentoApp</h1>
+    <h1>Sistema Recebimento</h1>
 
     <!-- ========================= -->
     <!-- 🔐 BLOCO DE LOGIN -->
@@ -49,8 +55,6 @@
     <!-- ========================= -->
     <!-- 📦 FORMULÁRIO DE RECEBIMENTO (visível após login) -->
     <div id="recebimento-container" style="display: none">
-      <h2>RECEBER NOTA FISCAL</h2>
-
       <!-- Formulário de recebimento -->
       <form id="recebimento-form">
         <!-- Código do produto (identificador) -->
@@ -128,5 +132,12 @@
     <!-- ========================= -->
     <!-- 📜 Importa o script principal em modo módulo -->
     <script type="module" src="script.js"></script>
+    <!--  FOOTER  -->
+    <footer id="footer-corporativo">
+      Criado por
+      <a href="https://github.com/bnocrv" target="_blank">
+        Bruno dos S. Carvalho
+      </a>
+    </footer>
   </body>
 </html>
