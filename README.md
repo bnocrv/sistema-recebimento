@@ -4,7 +4,7 @@ O **Sistema de Recebimento** é uma aplicação web completa para registro de en
 
 Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, utilizando Firebase Authentication, Firestore e Google Apps Script.
 
-[🚀 Acesse o sistema](https://seu-sistema.vercel.app)
+[🚀 Acesse o sistema](https://sistema-recebimento.vercel.app)
 
 ---
 
@@ -16,7 +16,7 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 ---
 
-## 🛠️ Funcionalidades principais
+# 🛠️ Funcionalidades principais
 
 - 🔐 **Login seguro com Firebase Authentication**
 - 🧾 **Cadastro de produtos com:**
@@ -33,13 +33,7 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 ---
 
-## 🖼️ Screenshot
-
-<img src="screenshot.png" alt="Interface do Sistema de Recebimento" width="700"/>
-
----
-
-## 🔌 Tecnologias e Integrações
+# 🔌 Tecnologias e Integrações
 
 | Tecnologia       | Uso                                                        |
 |------------------|------------------------------------------------------------|
@@ -52,7 +46,7 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 ---
 
-## 🔄 Fluxo de funcionamento
+# 🔄 Fluxo de funcionamento
 
 1. Usuário faz login
 2. Preenche o formulário de recebimento
@@ -64,20 +58,15 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 ---
 
-## 🧪 Possíveis melhorias
+# 🧪 Possíveis melhorias
 
-- Visualização de recebimentos anteriores
-- Relatórios por período e exportação
 - Filtros por fornecedor ou usuário
-- Edição e exclusão de entradas
 - Login com perfis de acesso (admin/colaborador)
 - Versão mobile dedicada
 
 ---
 
----
-
-## 📑 Planilha integrada
+# 📑 Planilha integrada
 
 - Nome: **Planilha de Recebimentos**
 - Aba: `Recebidos`
@@ -85,7 +74,7 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 ---
 
-## 🧠 Aprendizados aplicados
+# 🧠 Aprendizados aplicados
 
 - Validação de formulário com feedback em tempo real
 - Manipulação avançada de arquivos com `FileReader`
@@ -96,20 +85,20 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 ---
 
-## 👨‍💻 Sobre o projeto
+# 👨‍💻 Sobre o projeto
 
 Este projeto foi desenvolvido como parte dos meus estudos em **Análise e Desenvolvimento de Sistemas** na **Afya**, com objetivo de aprender na prática como integrar front-end com serviços de backend reais, como Firebase e Google Sheets, sem depender de frameworks ou bibliotecas externas.
 
 ---
 
-## 📫 Contato
+# 📫 Contato
 
 - GitHub: [@bnocrv](https://github.com/bnocrv)
 - LinkedIn: [@bnocrv](https://linkedin.com/in/bnocrv)
 
 ---
 
-## 📅 Últimas atualizações (Ago/2025)
+# 📅 Últimas atualizações (Ago/2025)
 
 - ✅ Integração funcional com planilha Google Sheets
 - 📸 Upload de múltiplas imagens para cada item
