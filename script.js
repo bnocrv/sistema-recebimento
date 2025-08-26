@@ -212,6 +212,9 @@ recebimentoForm.addEventListener("submit", async (e) => {
       recebimentoForm.reset();
       descricaoProdutoInput.value = "";
       fornecedorProdutoInput.value = "";
+
+      // Reatribui o valor do usuário para o campo, para manter sempre preenchido
+      document.getElementById("usuario-logado").value = usuario;
     } else {
       throw new Error(respostaTexto);
     }
