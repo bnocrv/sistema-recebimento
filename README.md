@@ -60,6 +60,7 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 
 # 🧪 Possíveis melhorias
 
+- Upload de múltiplas imagens para cada item
 - Filtros por fornecedor ou usuário
 - Login com perfis de acesso (admin/colaborador)
 - Versão mobile dedicada
@@ -101,7 +102,6 @@ Este projeto foi desenvolvido como parte dos meus estudos em **Análise e Desenv
 # 📅 Últimas atualizações (Ago/2025)
 
 - ✅ Integração funcional com planilha Google Sheets
-- 📸 Upload de múltiplas imagens para cada item
 - 🧹 Formulário limpa após envio com sucesso
 - 🔐 Implementado login com validação de e-mail/senha
 
