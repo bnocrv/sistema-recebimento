@@ -1,3 +1,267 @@
+/* Reset básico pra tirar margem e padding padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz o padding entrar no tamanho total */
+}
+
+/* Cores que usamos no site, facilita trocar depois */
+:root {
+  --bg: #f0f0f5;
+  --text: #222;
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --error: #e74c3c;
+  --success: #27ae60;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --footer-bg: #ddd;
+}
+
+/* Modo escuro, só muda as cores */
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --primary: #ecf0f1;
+  --accent: #2980b9;
+  --error: #e74c3c;
+  --success: #2ecc71;
+  --input-bg: #1e1e1e;
+  --input-border: #555;
+  --footer-bg: #222;
+}
+
+/* Corpo da página, fonte e cores */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título grande no topo */
 h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px; /* Espaço embaixo do título */
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Botão pra trocar tema (claro/escuro) */
+#theme-toggle {
+  display: block;
+  margin: 0 0 20px auto;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  max-width: 150px;
+  font-weight: 600;
+  user-select: none;
+}
+
+#theme-toggle:hover {
+  background: #1b6ea3;
+}
+
+/* Caixa branca que envolve o formulário */
+#login-container,
+#recebimento-container {
+  max-width: 480px;
+  margin: 0 auto 40px auto; /* Espaço embaixo da caixa */
+  background: var(--input-bg);
+  padding: 25px 30px; /* Espaço interno da caixa */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título dentro dos formulários */
+#login-container h2,
+#recebimento-container h2 {
+  font-size: 1.7rem;
+  margin-bottom: 18px; /* Espaço entre o título e os campos */
+  text-align: center;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Formulário em coluna, com espaço entre os campos */
+/* Quer mudar o espaço entre os campos? Muda esse gap */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Espaço vertical entre os campos, aumenta ou diminui aqui */
+}
+
+/* Label dos campos, deixa tudo mais legível */
+label {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.05rem;
+  margin-bottom: 0px; /* Espaço entre label e o campo (input) */
+}
+
+/* Campos de texto, número, arquivo e textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  background-color: var(--input-bg);
+  border: 1.5px solid var(--input-border);
+  padding: 5px 6px; /* Espaço dentro do campo */
+  border-radius: 6px;
+  font-size: 1.05rem;
+  color: var(--text);
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+/* Quando clica no campo */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+/* Botão de enviar */
+button[type="submit"] {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+
+  margin-top: 0px; /* Espaço entre o botão e o campo acima */
+  user-select: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b6ea3;
+}
+
+/* Mensagens de erro e sucesso */
+#login-error {
+  color: var(--error);
+  font-weight: 700;
+}
+
+#senha-msg,
+#recebimento-msg {
+  color: var(--success);
+  font-weight: 700;
+}
+
+body.dark #recebimento-msg {
+  color: #fff;
+}
+
+/* Link "Esqueci minha senha" */
+#esqueceu-senha,
+#esqueceu-senha:visited {
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px; /* Espaço em cima do link */
+  transition: color 0.3s ease;
+}
+
+#esqueceu-senha:hover {
+  color: #1b6ea3;
   text-decoration: underline;
+}
+
+/* Rodapé */
+#footer-corporativo {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: var(--footer-bg);
+  font-size: 0.9rem;
+  border-radius: 0 0 10px 10px;
+  font-weight: 600;
+  user-select: none;
+  margin-top: auto;
+  color: var(--accent);
+}
+
+#footer-corporativo a,
+#footer-corporativo a:visited,
+#footer-corporativo a:hover,
+#footer-corporativo a:active {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer-corporativo a:hover {
+  text-decoration: underline;
+}
+
+/* Botão loading tema escuro */
+body.dark button.loading,
+body.dark button[disabled] {
+  color: #fff !important;
+}
+
+/* Responsividade pra celular */
+@media (max-width: 600px) {
+  body {
+    padding: 15px 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #theme-toggle {
+    margin: 0 15px 15px auto;
+    font-size: 13px;
+    padding: 6px 12px;
+    max-width: 130px;
+  }
+
+  #login-container,
+  #recebimento-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  button[type="submit"] {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  textarea,
+  input[type="file"] {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
 }
