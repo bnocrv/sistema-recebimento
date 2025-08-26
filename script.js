@@ -185,7 +185,7 @@ recebimentoForm.addEventListener("submit", async (e) => {
 
     // ========== APP SCRIPT ==========
     const webAppURL =
-      "https://script.google.com/macros/s/AKfycbzjGIfsc-SlWNjxwDzkWTgAWIR5C6IvQ2qLASy1uINLqT8g6VA8Cx9FMqssyLK7LWsZ/exec";
+      "https://script.google.com/macros/s/AKfycbxYI5909qoNVkDnwQNBdzhw4EjKFIMDZUrvarPkFO1pQV8ykkPkFiqbzOrVTfNxqB-1/exec";
 
     const respostaPlanilha = await fetch(webAppURL, {
       method: "POST",
