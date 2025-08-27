@@ -145,7 +145,6 @@ recebimentoForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    recebimentoMsg.style.color = ""; // reseta cor
     recebimentoMsg.textContent = "Salvando recebimento...";
 
     const fotosURLs = [];
