@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>RecebimentoApp</title>
 
-    <!-- Link para fonte Roboto do Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Link para seu CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -20,76 +20,58 @@
     <!-- 🧾 Título principal do sistema -->
     <h1>Sistema Recebimento</h1>
 
-    <!-- ========================= -->
     <!-- 🔐 BLOCO DE LOGIN -->
     <div id="login-container">
       <h2>Login</h2>
 
       <!-- Formulário de login com email e senha -->
       <form id="login-form">
-        <!-- Campo de e-mail corporativo -->
         <input
           type="email"
           id="email"
           placeholder="E-mail corporativo"
           required
         />
-
-        <!-- Campo de senha -->
         <input type="password" id="password" placeholder="Senha" required />
-
-        <!-- Botão de login -->
         <button type="submit">Entrar</button>
       </form>
 
-      <!-- Mensagem de erro de login -->
       <p id="login-error" style="color: red"></p>
-
-      <!-- Link para recuperação de senha -->
       <p><a href="#" id="esqueceu-senha">Esqueci minha senha</a></p>
-
-      <!-- Mensagem de envio de e-mail de redefinição -->
       <p id="senha-msg" style="color: green"></p>
     </div>
 
-    <!-- ========================= -->
     <!-- 📦 FORMULÁRIO DE RECEBIMENTO (visível após login) -->
     <div id="recebimento-container" style="display: none">
-      <!-- Formulário de recebimento -->
       <form id="recebimento-form">
-        <!-- Código do produto (identificador) -->
-        <label for="codigo-produto">Código:</label><br />
+        <label for="codigo-produto">Código:</label>
         <input
           type="text"
           id="codigo-produto"
           name="codigo-produto"
           required
           autocomplete="off"
-        /><br /><br />
+        />
 
-        <!-- Descrição do produto (preenchido automaticamente) -->
-        <label for="descricao-produto">Descrição:</label><br />
+        <label for="descricao-produto">Descrição:</label>
         <textarea
           id="descricao-produto"
           name="descricao-produto"
           rows="3"
           readonly
           placeholder="Descrição aparecerá automaticamente"
-        ></textarea
-        ><br /><br />
+        ></textarea>
 
-        <!-- Fornecedor do produto (preenchido automaticamente) -->
-        <label for="fornecedor-produto">Fornecedor:</label><br />
+        <label for="fornecedor-produto">Fornecedor:</label>
         <input
           type="text"
           id="fornecedor-produto"
           name="fornecedor-produto"
           readonly
           placeholder="Fornecedor aparecerá automaticamente"
-        /><br /><br />
+        />
 
-        <!-- Foto(s) do recebimento - múltiplas imagens -->
-        <label for="foto-recebimento">Foto(s) do Recebimento:</label><br />
+        <label for="foto-recebimento">Foto(s) do Recebimento:</label>
         <input
           type="file"
           id="foto-recebimento"
@@ -98,10 +80,9 @@
           capture="environment"
           multiple
           required
-        /><br /><br />
+        />
 
-        <!-- Quantidade recebida -->
-        <label for="quantidade">Quantidade:</label><br />
+        <label for="quantidade">Quantidade:</label>
         <input
           type="number"
           id="quantidade"
@@ -109,35 +90,30 @@
           min="1"
           required
           placeholder="Informe a quantidade recebida"
-        /><br /><br />
+        />
 
-        <!-- Usuário logado (email da loja) -->
-        <label for="usuario-logado">Usuário (Loja):</label><br />
+        <label for="usuario-logado">Usuário (Loja):</label>
         <input
           type="text"
           id="usuario-logado"
           name="usuario-logado"
           readonly
           placeholder="Seu usuário será preenchido automaticamente"
-        /><br /><br />
+        />
 
-        <!-- Botão de envio do formulário -->
         <button type="submit">Salvar Recebimento</button>
       </form>
 
-      <!-- Área para mensagens (sucesso ou erro) -->
       <p id="recebimento-msg"></p>
     </div>
 
-    <!-- ========================= -->
-    <!-- 📜 Importa o script principal em modo módulo -->
-    <script type="module" src="script.js"></script>
-    <!--  FOOTER  -->
     <footer id="footer-corporativo">
       Criado por
-      <a href="https://github.com/bnocrv" target="_blank">
+      <a href="https://github.com/bnocrv" target="_blank" rel="noopener noreferrer">
         Bruno dos S. Carvalho
       </a>
     </footer>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
