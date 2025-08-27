@@ -101,8 +101,9 @@ Este projeto foi desenvolvido como parte dos meus estudos em **Análise e Desenv
 
 # 📅 Últimas atualizações (Ago/2025)
 
-- ✅ Integração funcional com planilha Google Sheets
-- 🧹 Formulário limpa após envio com sucesso
-- 🔐 Implementado login com validação de e-mail/senha
+- Integração funcional com planilha Google Sheets
+- Formulário limpa após envio com sucesso
+- Implementado login com validação de e-mail/senha
+- Substituição do armazenamento das imagens no ImgBB pelo Cloudnary 
 
 
