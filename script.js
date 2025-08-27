@@ -158,19 +158,22 @@ recebimentoForm.addEventListener("submit", async (e) => {
 
           try {
             const formData = new FormData();
-            formData.append("key", "aa3ef7357e89fe7032ebeb4185be9229");
-            formData.append("image", base64Image); // continua sendo base64
+            formData.append("file", `data:image/jpeg;base64,${base64Image}`);
+            formData.append("upload_preset", "recebimento_fotos");
 
-            const response = await fetch("https://api.imgbb.com/1/upload", {
-              method: "POST",
-              body: formData,
-            });
+            const response = await fetch(
+              "https://api.cloudinary.com/v1_1/dmpqzayaa/image/upload",
+              {
+                method: "POST",
+                body: formData,
+              }
+            );
 
             const result = await response.json();
-            if (result.success) {
-              resolve(result.data.url);
+            if (result.secure_url) {
+              resolve(result.secure_url);
             } else {
-              reject("Erro no upload do ImgBB");
+              reject("Erro no upload do Cloudinary");
             }
           } catch (err) {
             reject(err);
