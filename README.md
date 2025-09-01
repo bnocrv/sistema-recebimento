@@ -42,7 +42,7 @@ Este projeto foi desenvolvido com **HTML, CSS e JavaScript puro (Vanilla)**, uti
 | **Firebase Auth**| Login e recuperação de senha                               |
 | **Firestore**    | Armazenamento de dados                                     |
 | **Google Sheets**| Backup dos recebimentos via Apps Script                    |
-| **ImgBB API**    | Upload e hosting das imagens de produtos                   |
+| **Cloudinary API**    | Upload e hosting das imagens de produtos                   |
 
 ---
 
